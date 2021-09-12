@@ -1,262 +1,147 @@
 <!DOCTYPE html>
-<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML-Week04-Simple Web Page</title>
+    <title>ContactPage</title>
   </head>
   <body>
-    <main>
-      <header>
-        <div>
-          <img
-            src="./HTML_Week04_Ayse_Dogan_Simple Web Page_files/hicoders_logo.png"
-          />
-        </div>
-        <section align="right">
-          <a href="http://127.0.0.1:5500/home.html">Home</a>
-          <a href="http://127.0.0.1:5500/contact.html">Contact</a>
-        </section>
-      </header>
-      <hr />
-      <h1 align="center">Welcome to HiCoders'Web Programming Course</h1>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <!--resmi büyütemedim-->
-              <img
-                src="./HTML_Week04_Ayse_Dogan_Simple Web Page_files/Sinif_resmi.png"
-                class="picture"
-                style="background-size: contain"
-                alt="schoolroom"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <!--bu contenti ortalayamadim-->
-      <section>
-        <table>
+    <header id="head">
+      <div>
+        <img src="./hicoders_logo.png" />
+      </div>
+      <section align="right">
+        <a href="http://127.0.0.1:5500/home.html">Home</a>
+        <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+        <hr />
+      </section>
+    </header>
+    <section class="Information" style=";background-color: gainsboro">
+    <h1 align="center">The HiCoders welcome you!</h1>
+    <p align="center">
+      We are experienced software engineers.We voluntarily help people who are
+      interested in IT and run various courses for this purpose. If you are
+      interested in our course, do not hesiate to contact us!
+    </p>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <article action="/action_page.php">
+        <label for="fname">First name</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Please enter your firstname!"
+        /><br />
+        <label for="lname">Last name</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Please enter your Lastname!"
+        /><br />
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Please enter your email!"
+        /><br />
+        <label for="gender">Gender</label>
+        <br />
+        <input type="radio" id="gender" name="gender" value="female" />
+        <label for="gender">Female</label><br />
+        <input type="radio" name="gender" value="Male" />
+        <label for="gender">Male</label><br />
+        <label for="phone">Phone</label><br />
+        <input
+          type="number"
+          value="phonenumber"
+          placeholder="Please enter your Phone no."
+          method="post"
+        /><br />
+        <label for="graduation">Graduation</label><br />
+        <select name="Graduation">
+          <option>PhD.</option>
+          <option>Master</option>
+          <option>Bachelor</option>
+          <option>Association</option>
+        </select>
+        <br />
+        <label for="expecting"> What do you expect from this course?</label
+        ><br />
+        <textarea name="" id="" cols="30" rows="10"></textarea><br />
+        <label for="expecting"> Why do you want to learn programming?</label
+        ><br />
+        </article>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Family Members</legend>
+          <label for="Family ">Are you married?</label>
+          <br />
+          <input type="radio" id=" decide1" name="marriage" />
+          <label for="decide">Yes</label><br />
+          <input type="radio" name="gender" value="Male" />
+          <label for="decide">No</label><br />
+          <p>If you married, how many children you are?</p>
+          <input type="number" placeholder="Enter number of children!">
+        </fieldset>
+        <fieldset>
+          <legend>Confirmation and Application</legend>
+          <label for="experiance">Which once are you familiar with?</label><br/>
+          <input type="checkbox" id="Programming1" name="Application">
+          <label>HTML</label><br/>
+          <input type="checkbox" id="Programming1" name="Application">
+            <label>CSS</label><br/>
+            <input type="checkbox" id="Programming1" name="Application">
+            <label>Bootstrap</label><br/>
+            <input type="checkbox" id="Programming1" name="Application">
+            <label>Javascript</label><br/>
+            <input type="checkbox" id="Programming1" name="Application">
+            <label>NodeJS</label><br/>
+            <input type="checkbox" id="Programming1" name="Application">
+            <label>ReactJS</label><br/>
+            <label for="CV">Add your Cv</label><br/>
+            <button type="submit" id="submit1">Dosya sec</button>
+            <label for="submit">Dosya secilmedi</label><br/>
+            <input type="checkbox" id="Programming1" name="Application">
+            <label>Please confirmm by ticking the box after reading the <a href="./https://www.google.com/" id="Google"><u>privacy terms and conditions!<u/></a></label><br/>
+            <button type="submit" label for="Google"a href="./htttp://www.google.com/">submit</button>
+        </fieldset>
+      </form>
+      <hr/>
+      <footer>
+        <table bgcolor="lightgray" rowspan="2" width="100%">
           <tbody>
             <tr>
-              <td>
-                <table bgcolor="lightgray" rowspan="2" id="arkafon1">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <fieldset>
-                          <legend>What contains Web Basics?</legend>
-                          <ul>
-                            <li><u>HTML5</u></li>
-                            <li><u>CSS3</u></li>
-                            <li>Visual Studio Code (<u>IDE</u>)</li>
-                            <li>Semantic Web</li>
-                            <li>Responsive Web Design</li>
-                            <li>Bootstrap Css Framework</li>
-                            <li>Command Line Interface (<u>CLI</u>)</li>
-                            <li>Git als VSC</li>
-                            <li>GitHub</li>
-                            <li>
-                              IT basis&amp;concepts<i
-                                >(computers,networks,operating systems)</i
-                              >
-                            </li>
-                          </ul>
-                        </fieldset>
-                        <fieldset>
-                          <details>
-                            <summary>What contains Web Programming?</summary>
-                          </details>
-                          <ol>
-                            <li>
-                              Basic programming
-                              <i>(variables, conditions, loops, functions)</i>
-                            </li>
-                            <li>
-                              Ecma script
-                              <i>
-                                (objects, arrays, strings, template literals,
-                                dates, functional programming)</i
-                              >
-                            </li>
-                            <li>Create algorithms</li>
-                            <li>Creation and use of data models</li>
-                            <li>
-                              Working with modules
-                              <i
-                                >(separation of responsibilities,
-                                modularization)</i
-                              >
-                            </li>
-                            <li>DOM programming <i>(DOM-Api, BOM-Api)</i></li>
-                            <li>Use of web interfaces in applications</li>
-                            <li>Use of web libraries in applications</li>
-                            <li>
-                              How to Use Tools to Fond Errors <i>(Debug)</i>
-                            </li>
-                            <li>Basis of test-driven development</li>
-                          </ol>
-                        </fieldset>
-                      </td>
-                      <td>
-                        <h2>
-                          Our motto is: share knowledge and promote people!
-                        </h2>
-                        <br />
-                        <br />
-                        <h3>Web Basics</h3>
-                        <br />
-                        <p>
-                          It is the first module of our course. This course
-                          first covers the basics of web technologies. The tools
-                          required for programming websites are presented.The
-                          tools required for programming websites are presented.
-                          The technologies listed below will be completed in
-                          <u>approximately 8 weeks</u>with an intense homework
-                          pace. Participants who have completed this course will
-                          have gained knowledge and experience in the use of the
-                          following rools ans tecjnologies and with
-                          <mark
-                            >this knowledge and experience will be able to
-                            create static websites very easily.</mark
-                          >
-                        </p>
-                        <br />
-                        <br />
-                        <h3>Web Programming</h3>
-                        <br />
-                        <p>
-                          In this second course of our module,<strong
-                            >basic programming structures in Javascript</strong
-                          >are taught.The tasks dealt with in this module are
-                          well above the basics level, and the submission ot
-                          these tasks is the most important prerequisite for
-                          completing the course. While the participants prepare
-                          these assignments,they need to do research outside of
-                          class and,in particular,have frequent dialogues with
-                          their mentors and reques their support. Although this
-                          module is a very challenging module, it is the main
-                          module that teaches programming beyond the basics
-                        </p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <td valign="top" align="right">
+                <!--Siralama noktalari kaydi programlayamadim-->
+                <h4>Our Course Phases</h4>
+                <ul type="circle" valign="top" align="right">
+                  <li>Web Fundamentals</li>
+                  <li>Web Programming</li>
+                  <li>Fullstack Web Programming</li>
+                  <li>Capstone Project</li>
+                </ul>
+              </td>
+              <td valign="top" align="center">
+                <h4 class="Information about the Course">Contact</h4>
+                <a href="https://www.google.com/">✉info@hicoders.ch</a>
+                <br />
+                <a href="https://www.google.com/">☎+41009001010</a>
+                <adress
+                  ><p id="Adress">☆Schaffhauserstrasse 470,</p>
+                  <p>8052 Zurich</p></adress
+                >
               </td>
             </tr>
           </tbody>
         </table>
-      </section>
-      <table width="100%">
-        <tbody>
-          <tr>
-            <td align="center">
-              <iframe
-                width="950"
-                height="503"
-                src="./HTML_Week04_Ayse_Dogan_Simple Web Page_files/jPC9CjXAVpQ.html"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen=""
-              ></iframe>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <hr />
-      <section>
-        <footer>
-          <table bgcolor="lightgray" rowspan="2" width="100%">
-            <tbody>
-              <tr>
-                <td valign="top" align="right">
-                  <!--Siralam noktalari kaydi programlayamadim-->
-                  <h4>Our Course Phases</h4>
-                  <ul>
-                    <li>Web Fundamentals</li>
-                    <li>Web Programming</li>
-                    <li>Fullstack Web Programming</li>
-                    <li>Capstone Project</li>
-                  </ul>
-                </td>
-                <td valign="top" align="center">
-                  <h4 class="Information about the Course">Contact</h4>
-                  <a href="https://www.google.com/">✉info@hicoders.ch</a>
-                  <br />
-                  <a href="https://www.google.com/">☎+41009001010</a>
-                  <adress
-                    ><p id="Adress">☆Schaffhauserstrasse 470,</p>
-                    <p>8052 Zurich</p></adress
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </footer>
-      </section>
-      <!-- Code injected by live-server -->
-      <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ("WebSocket" in window) {
-          (function () {
-            function refreshCSS() {
-              var sheets = [].slice.call(document.getElementsByTagName("link"));
-              var head = document.getElementsByTagName("head")[0];
-              for (var i = 0; i < sheets.length; ++i) {
-                var elem = sheets[i];
-                var parent = elem.parentElement || head;
-                parent.removeChild(elem);
-                var rel = elem.rel;
-                if (
-                  (elem.href && typeof rel != "string") ||
-                  rel.length == 0 ||
-                  rel.toLowerCase() == "stylesheet"
-                ) {
-                  var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                  elem.href =
-                    url +
-                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                    "_cacheOverride=" +
-                    new Date().valueOf();
-                }
-                parent.appendChild(elem);
-              }
-            }
-            var protocol =
-              window.location.protocol === "http:" ? "ws://" : "wss://";
-            var address =
-              protocol +
-              window.location.host +
-              window.location.pathname +
-              "/ws";
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-              if (msg.data == "reload") window.location.reload();
-              else if (msg.data == "refreshcss") refreshCSS();
-            };
-            if (
-              sessionStorage &&
-              !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-            ) {
-              console.log("Live reload enabled.");
-              sessionStorage.setItem(
-                "IsThisFirstTime_Log_From_LiveServer",
-                true
-              );
-            }
-          })();
-        } else {
-          console.error(
-            "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-          );
-        }
-        // ]]>
-      </script>
-    </main>
+      </footer>
+
+        
   </body>
 </html>
